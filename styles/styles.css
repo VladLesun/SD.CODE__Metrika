@@ -30,6 +30,7 @@ body {
 /* ! offsets */
 .title-offset {
 	font-size: 18px;
+	line-height: 25px;
 	letter-spacing: -0.03em;
 	text-transform: uppercase;
 	color: var(--text);
@@ -74,6 +75,7 @@ body {
 .about__desc {
 	width: 1048px;
 	font-size: 45px;
+	line-height: 61px;
 	color: var(--text);
 	margin-bottom: 30px;
 }
