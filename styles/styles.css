@@ -189,17 +189,19 @@ body {
 
 /* ! WORK */
 .work {
-	position: relative;
-	width: 100%;
-	min-height: 717px;
+	height: 717px;
 	background-image: url('../resources/work.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
+.work__container {
+	position: relative;
+	height: 100%;
+}
+
 .work__desc {
 	position: absolute;
-	left: 125px;
 	bottom: 60px;
 	width: 443px;
 	color: var(--white);
