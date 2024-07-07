@@ -18,6 +18,7 @@ body {
 	width: 100%;
 	font-family: 'Manrope', sans-serif;
 	font-weight: 400;
+	letter-spacing: -0.03em;
 	background-color: var(--white);
 }
 
@@ -35,7 +36,6 @@ body {
 .title-offset {
 	font-size: 18px;
 	line-height: 25px;
-	letter-spacing: -0.03em;
 	text-transform: uppercase;
 }
 
@@ -43,7 +43,6 @@ body {
 	font-weight: 400;
 	font-size: 30px;
 	line-height: 41px;
-	letter-spacing: -0.03em;
 }
 
 .image-offset {
@@ -58,7 +57,6 @@ body {
 	margin-bottom: 30px;
 	font-size: 60px;
 	line-height: 100%;
-	letter-spacing: -0.03em;
 	color: var(--text);
 }
 
@@ -92,7 +90,6 @@ body {
 	margin-bottom: 30px;
 	font-size: 45px;
 	line-height: 61px;
-	letter-spacing: -0.03em;
 	color: var(--text);
 }
 
@@ -104,7 +101,6 @@ body {
 	border: 1px solid transparent;
 	border-radius: 5px;
 	font-size: 20px;
-	letter-spacing: -0.03em;
 	line-height: 67px;
 	text-align: center;
 	text-decoration: none;
@@ -137,7 +133,6 @@ body {
 .projects__item-link {
 	font-weight: 400;
 	font-size: 20px;
-	letter-spacing: -0.03em;
 	color: var(--accent);
 	text-decoration: none;
 	transition: color 0.3s ease-in-out;
@@ -154,7 +149,6 @@ body {
 	border-radius: 5px;
 	font-weight: 400;
 	font-size: 30px;
-	letter-spacing: -0.03em;
 	background-color: transparent;
 	color: var(--accent);
 	cursor: pointer;
