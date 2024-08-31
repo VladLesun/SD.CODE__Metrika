@@ -1,0 +1,48 @@
+/* ! CONTACTS */
+.contacts {
+	padding: 93px 0 160px;
+}
+
+.contacts__title {
+	position: relative;
+	margin-bottom: 32px;
+}
+.contacts__title::before {
+	position: absolute;
+	left: -5px;
+	top: -36px;
+	content: '';
+	width: 24px;
+	height: 24px;
+	background: url('../resources/phone.svg') center/contain no-repeat;
+}
+
+.contacts__item:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+.contacts__link {
+	position: relative;
+	font-weight: 400;
+	font-size: 60px;
+	line-height: 100%;
+	letter-spacing: -0.02em;
+	color: var(--text);
+	transition: opacity 0.4s ease-in-out;
+}
+
+.contacts__link::after {
+	position: absolute;
+	left: 0;
+	bottom: 5px;
+	content: '';
+	width: 0;
+	height: 2px;
+	background-color: var(--text);
+	transition: width 0.5s ease-in-out, opacity 0.3s ease-in-out;
+}
+.contacts__link:hover,
+.contacts__link:hover::after {
+	width: 100%;
+	opacity: 0.5;
+}

@@ -1,0 +1,18 @@
+/* ! FOOTER */
+.footer {
+	padding: 60px 0 35px;
+	background-color: var(--text);
+	color: var(--white);
+}
+
+.footer__nav {
+	margin-bottom: 90px;
+}
+
+.footer__desc {
+	text-align: center;
+	font-weight: 400;
+	font-size: 20px;
+	letter-spacing: -0.03em;
+	opacity: 0.5;
+}
