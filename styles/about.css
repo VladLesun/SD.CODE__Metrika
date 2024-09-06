@@ -38,7 +38,7 @@
 	color: var(--accent);
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 961px) {
 	.about {
 		padding: 60px 0;
 	}
@@ -48,7 +48,7 @@
 	}
 }
 
-@media (max-width: 767px) {
+@media (max-width: 610px) {
 	.about {
 		padding: 40px 0;
 	}

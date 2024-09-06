@@ -16,6 +16,8 @@
 		/>
 
 		<link rel="stylesheet" href="index.css" />
+
+		<script src="js/gallery.js" defer></script>
 	</head>
 	<body>
 		<!-- <header class="header">
@@ -122,12 +124,12 @@
 						<li class="projects__item">
 							<picture>
 								<source
-									media="(max-width: 767px)"
+									media="(max-width: 610px)"
 									type="image/jpg"
 									srcset="resources/projects1-mobile.jpg"
 								/>
 								<source
-									media="(max-width: 1199px)"
+									media="(max-width: 961px)"
 									type="image/jpg"
 									srcset="resources/projects1-tablet.jpg"
 								/>
@@ -145,12 +147,12 @@
 						<li class="projects__item">
 							<picture>
 								<source
-									media="(max-width: 767px)"
+									media="(max-width: 610px)"
 									type="image/jpg"
 									srcset="resources/projects2-mobile.jpg"
 								/>
 								<source
-									media="(max-width: 1199px)"
+									media="(max-width: 961px)"
 									type="image/jpg"
 									srcset="resources/projects2-tablet.jpg"
 								/>
@@ -168,12 +170,12 @@
 						<li class="projects__item">
 							<picture>
 								<source
-									media="(max-width: 767px)"
+									media="(max-width: 610px)"
 									srcset="resources/projects3-mobile.jpg"
 									type="image/jpg"
 								/>
 								<source
-									media="(max-width: 1199px)"
+									media="(max-width: 961px)"
 									srcset="resources/projects3-tablet.jpg"
 									type="image/jpg"
 								/>
@@ -202,12 +204,12 @@
 						<li class="services__item">
 							<picture>
 								<source
-									media="(max-width: 767px)"
+									media="(max-width: 610px)"
 									srcset="resources/services1-mobile.jpg"
 									type="image/jpg"
 								/>
 								<source
-									media="(max-width: 1199px)"
+									media="(max-width: 961px)"
 									srcset="resources/services1-tablet.jpg"
 									type="image/jpg"
 								/>
@@ -225,12 +227,12 @@
 						<li class="services__item">
 							<picture>
 								<source
-									media="(max-width: 767px)"
+									media="(max-width: 610px)"
 									srcset="resources/services2-mobile.jpg"
 									type="image/jpg"
 								/>
 								<source
-									media="(max-width: 1199px)"
+									media="(max-width: 961px)"
 									srcset="resources/services2-tablet.jpg"
 									type="image/jpg"
 								/>
@@ -246,12 +248,12 @@
 						<li class="services__item">
 							<picture>
 								<source
-									media="(max-width: 767px)"
+									media="(max-width: 610px)"
 									srcset="resources/services3-mobile.jpg"
 									type="image/jpg"
 								/>
 								<source
-									media="(max-width: 1199px)"
+									media="(max-width: 961px)"
 									srcset="resources/services3-tablet.jpg"
 									type="image/jpg"
 								/>
@@ -267,12 +269,12 @@
 						<li class="services__item">
 							<picture>
 								<source
-									media="(max-width: 767px)"
+									media="(max-width: 610px)"
 									srcset="resources/services4-mobile.jpg"
 									type="image/jpg"
 								/>
 								<source
-									media="(max-width: 1199px)"
+									media="(max-width: 961px)"
 									srcset="resources/services4-tablet.jpg"
 									type="image/jpg"
 								/>
@@ -347,34 +349,125 @@
 				</div>
 			</section>
 
-			<!-- <section class="work">
-				<div class="container work__container">
-					<h2 class="work__desc desc-offset">
-						Проект Двухкомнатной квартиры в ЖК Лесной Пейзаж
-					</h2>
+			<section class="gallery">
+				<div class="gallery__title-wrapper">
+					<div class="container gallery__container">
+						<h2 class="gallery__title">галерея проектов</h2>
+					</div>
 				</div>
-			</section> -->
 
-			<!-- <section class="contacts" id="contacts">
+				<ul class="gallery__slider">
+					<li class="gallery__slide gallery__slide_active">
+						<img
+							src="resources/gallery-1.png"
+							alt="Проект Двухкомнатной квартиры в ЖК Лесной Пейзаж"
+							class="gallery__slide-image"
+						/>
+						<div class="container gallery__container">
+							<h3 class="gallery__slide-title">
+								Проект Двухкомнатной<br />
+								квартиры в ЖК Лесной Пейзаж
+							</h3>
+						</div>
+					</li>
+					<li class="gallery__slide">
+						<img
+							src="resources/gallery-2.png"
+							alt="Проект гостиной в ЖК Маяк"
+							class="gallery__slide-image"
+						/>
+						<div class="container gallery__container">
+							<h3 class="gallery__slide-title">Проект гостиной в ЖК Маяк</h3>
+						</div>
+					</li>
+					<li class="gallery__slide">
+						<img
+							src="resources/gallery-3.png"
+							alt="Визуализация кухни-гостиной в частном доме"
+							class="gallery__slide-image"
+						/>
+						<div class="container gallery__container">
+							<h3 class="gallery__slide-title">
+								Визуализация кухни-гостиной<br />
+								в частном доме
+							</h3>
+						</div>
+					</li>
+					<li class="gallery__slide">
+						<img
+							src="resources/gallery-4.png"
+							alt="Проект кухни в скандинавском стиле для ЖК Северный Ветер"
+							class="gallery__slide-image"
+						/>
+						<div class="container gallery__container">
+							<h3 class="gallery__slide-title">
+								Проект кухни в скандинавском<br />
+								стиле для ЖК Северный Ветер
+							</h3>
+						</div>
+					</li>
+				</ul>
+
+				<div class="gallery__controls-wrapper">
+					<div class="container gallery__container">
+						<div class="gallery__controls">
+							<button class="gallery__controls-btn gallery__controls-btn_prev">
+								<svg
+									width="40"
+									height="40"
+									viewBox="0 0 40 40"
+									fill="currentColor"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M29.6167 6.28325L26.6667 3.33325L10 19.9999L26.6667 36.6666L29.6167 33.7166L15.9 19.9999L29.6167 6.28325Z"
+									/>
+								</svg>
+							</button>
+							<button class="gallery__controls-btn gallery__controls-btn_next">
+								<svg
+									width="40"
+									height="40"
+									viewBox="0 0 40 40"
+									fill="currentColor"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M10.3833 6.28325L13.3333 3.33325L30 19.9999L13.3333 36.6666L10.3833 33.7166L24.1 19.9999L10.3833 6.28325Z"
+									/>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="contacts" id="contacts">
 				<div class="container">
 					<h2 class="contacts__title title-offset">Контакты</h2>
 					<ul class="contacts__list">
 						<li class="contacts__item">
-							<a class="contacts__link" href="tel:+79358954535">
+							<a
+								class="contacts__link contacts__link_phone"
+								href="tel:+79358954535"
+							>
 								+7 935 895-45-35
 							</a>
 						</li>
 						<li class="contacts__item">
-							<a class="contacts__link" href="mailto:hello@mail.com">
+							<a
+								class="contacts__link contacts__link_mail"
+								href="mailto:hello@mail.com"
+							>
 								hello@mail.com
 							</a>
 						</li>
 					</ul>
 				</div>
-			</section> -->
+			</section>
 		</main>
 
-		<!-- <footer class="footer">
+		<footer class="footer">
 			<div class="container">
 				<nav class="footer__nav nav">
 					<ul class="nav__list nav__list_footer">
@@ -412,6 +505,6 @@
 
 				<p class="footer__desc">студия дизайна интерьера Метрика — 2023</p>
 			</div>
-		</footer> -->
+		</footer>
 	</body>
 </html>
