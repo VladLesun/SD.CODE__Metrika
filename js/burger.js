@@ -19,3 +19,15 @@ const burgerToggle = () => {
 };
 
 burgerBtnNode.addEventListener('click', burgerToggle);
+
+burgerNode.addEventListener('click', event => {
+	const isClickOutsideContent = !event
+		.composedPath()
+		.includes(burgerContentNode);
+
+	if (isClickOutsideContent) burgerToggle();
+});
+
+for (const link of burgerActionLinks) {
+	link.addEventListener('click', burgerToggle);
+}
