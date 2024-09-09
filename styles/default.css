@@ -39,8 +39,23 @@ button {
 	cursor: pointer;
 }
 
+input {
+	border: none;
+	outline: none;
+}
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+input[type='number'],
+input[type='number']:hover,
+input[type='number']:focus {
+	appearance: none;
+	-moz-appearance: textfield;
+}
+
 .container {
-	max-width: 1150px;
+	max-width: 1180px;
 	padding: 0 15px;
 	margin: 0 auto;
 }
@@ -73,7 +88,14 @@ button {
 	font-size: 30px;
 	cursor: pointer;
 	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out,
-		border-color 0.3s ease-in-out;
+		border-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+.big-btn-offset:active {
+	transform: scale(0.95);
+}
+
+.body_fixed {
+	overflow: hidden;
 }
 
 @media (max-width: 961px) {

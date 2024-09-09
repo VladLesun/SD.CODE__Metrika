@@ -30,12 +30,17 @@
 	background-color: var(--accent);
 	color: var(--white);
 	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out,
-		border 0.3s ease-in-out;
+		border 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
-.about__link:hover {
-	border: 1px solid var(--accent);
-	background-color: transparent;
-	color: var(--accent);
+@media (any-hover: hover) {
+	.about__link:hover {
+		border: 1px solid var(--accent);
+		background-color: transparent;
+		color: var(--accent);
+	}
+}
+.about__link:active {
+	transform: scale(0.95);
 }
 
 @media (max-width: 961px) {

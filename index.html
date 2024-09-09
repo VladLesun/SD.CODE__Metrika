@@ -18,9 +18,11 @@
 		<link rel="stylesheet" href="index.css" />
 
 		<script src="js/gallery.js" defer></script>
+		<script src="js/popup.js" defer></script>
+		<script src="js/burger.js" defer></script>
 	</head>
 	<body>
-		<!-- <header class="header">
+		<header class="header">
 			<div class="container header__container">
 				<a href="index.html" class="header__logo">
 					<svg
@@ -86,8 +88,14 @@
 						</li>
 					</ul>
 				</nav>
+				<button class="js-burger-btn header__burger-btn">
+					<div class="header__burger-btn-inner">
+						<span class="header__burger-line header__burger-line_top"></span>
+						<span class="header__burger-line header__burger-line_bottom"></span>
+					</div>
+				</button>
 			</div>
-		</header> -->
+		</header>
 
 		<main class="main">
 			<section class="hero">
@@ -506,5 +514,121 @@
 				<p class="footer__desc">студия дизайна интерьера Метрика — 2023</p>
 			</div>
 		</footer>
+
+		<div class="js-popup popup">
+			<div class="js-popup__content popup__content">
+				<p class="popup__title">Заказать услугу</p>
+				<p class="popup__desc">
+					Заполните форму, мы свяжемся с вами в течение суток
+				</p>
+				<form class="popup__form">
+					<label class="popup__label">
+						<input type="text" class="popup__input" placeholder="Имя" />
+					</label>
+					<label class="popup__label">
+						<input
+							type="email"
+							class="popup__input"
+							placeholder="Электронная почта"
+						/>
+					</label>
+					<label class="popup__label">
+						<input
+							type="tel"
+							class="popup__input"
+							placeholder="Номер телефона"
+						/>
+					</label>
+					<button
+						class="js-popup__submit popup__submit big-btn-offset"
+						type="submit"
+					>
+						Отправить
+					</button>
+				</form>
+				<button class="js-popup__close popup__close">
+					<svg
+						width="30"
+						height="30"
+						viewBox="0 0 30 30"
+						fill="currentColor"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							fill-rule="evenodd"
+							clip-rule="evenodd"
+							d="M29.2734 3.44008C29.4516 3.26214 29.5929 3.05085 29.6894 2.81827C29.7859 2.5857 29.8357 2.33639 29.8358 2.08459C29.836 1.83279 29.7866 1.58342 29.6903 1.35073C29.5941 1.11804 29.453 0.906571 29.2751 0.728411C29.0971 0.550251 28.8858 0.408884 28.6533 0.312381C28.4207 0.215878 28.1714 0.166128 27.9196 0.165974C27.6678 0.165819 27.4184 0.215261 27.1857 0.311479C26.953 0.407696 26.7416 0.548803 26.5634 0.726744L15.0001 12.2901L3.44008 0.726744C3.08027 0.366934 2.59226 0.164795 2.08341 0.164795C1.57456 0.164795 1.08655 0.366934 0.726744 0.726744C0.366934 1.08655 0.164795 1.57456 0.164795 2.08341C0.164795 2.59226 0.366934 3.08027 0.726744 3.44008L12.2901 15.0001L0.726744 26.5601C0.548584 26.7382 0.40726 26.9497 0.310841 27.1825C0.214421 27.4153 0.164795 27.6648 0.164795 27.9167C0.164795 28.1687 0.214421 28.4182 0.310841 28.651C0.40726 28.8837 0.548584 29.0952 0.726744 29.2734C1.08655 29.6332 1.57456 29.8354 2.08341 29.8354C2.33537 29.8354 2.58486 29.7857 2.81763 29.6893C3.05041 29.5929 3.26192 29.4516 3.44008 29.2734L15.0001 17.7101L26.5634 29.2734C26.9232 29.6328 27.4111 29.8345 27.9196 29.8342C28.4281 29.8339 28.9157 29.6316 29.2751 29.2717C29.6345 28.9119 29.8362 28.4241 29.8358 27.9156C29.8355 27.407 29.6332 26.9194 29.2734 26.5601L17.7101 15.0001L29.2734 3.44008Z"
+						/>
+					</svg>
+				</button>
+			</div>
+		</div>
+		<div class="js-burger burger">
+			<div class="js-burger__content burger__content">
+				<a href="index.html" class="burger__logo">
+					<svg
+						class="burger__logo-svg"
+						width="128"
+						height="23"
+						viewBox="0 0 128 23"
+						fill="currentColor"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M20.99 0.820068L10.94 11.9201L0.890024 0.820068H0.650024V22.0001H4.64002V10.6601L10.79 17.2901H11.06L17.27 10.6601V22.0001H21.26V0.820068H20.99Z"
+						/>
+						<path
+							d="M23.6563 18.1901V22.0001H37.6063V18.1901H23.6563ZM36.4963 9.61007H23.6563V13.4201H36.4963V9.61007ZM37.4263 1.00007H23.6563V4.84007H37.4263V1.00007Z"
+						/>
+						<path
+							d="M38.7634 1.00007V4.84007H54.0634V1.00007H38.7634ZM44.4334 22.0001H48.4234V7.96007H44.4334V22.0001Z"
+						/>
+						<path
+							d="M63.4935 1.00007H55.7235V4.84007H63.4035C65.4135 4.84007 66.6735 6.10007 66.6735 7.90007C66.6735 9.70007 65.4135 10.9901 63.4035 10.9901H55.7235V22.0001H59.7135V14.8001H63.4935C68.1735 14.8001 70.7835 11.7401 70.7835 7.90007C70.7835 4.06007 68.1735 1.00007 63.4935 1.00007Z"
+						/>
+						<path
+							d="M76.4209 1.00007H72.4309V22.2401H72.7009L84.6109 10.2401V22.0001H88.6009V0.820068H88.3309L76.4209 12.7901V1.00007Z"
+						/>
+						<path
+							d="M102.833 22.0001H107.813L101.033 11.3501L107.363 1.00007H102.983L97.4633 9.58007H95.0033V1.00007H91.0133V22.0001H95.0033V13.3901H97.5533L102.833 22.0001Z"
+						/>
+						<path
+							d="M119.859 1.00007H115.779L108.099 22.0001H112.629L117.819 7.00007L123.009 22.0001H127.539L119.859 1.00007Z"
+						/>
+					</svg>
+				</a>
+				<nav class="burger__nav">
+					<ul class="burger__list">
+						<li class="burger__item">
+							<a class="burger__link" href="#about">О нас</a>
+						</li>
+						<li class="burger__item">
+							<a class="burger__link" href="#projects">ПРОЕКТЫ</a>
+						</li>
+						<li class="burger__item">
+							<a class="burger__link" href="#services">УСЛУГИ</a>
+						</li>
+						<li class="burger__item">
+							<a class="burger__link" href="#contacts">КОНТАКТЫ</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="burger__contacts">
+					<p class="burger__contacts-text">для связи:</p>
+					<ul class="burger__contacts-list">
+						<li class="burger__contacts-item">
+							<a class="burger__contacts-link" href="tel:+79358954535">
+								+7 935 895-45-35
+							</a>
+						</li>
+						<li class="burger__contacts-item">
+							<a class="burger__contacts-link" href="mailto:hello@mail.com">
+								hello@mail.com
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>

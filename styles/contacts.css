@@ -47,10 +47,12 @@
 	background-color: var(--text);
 	transition: width 0.5s ease-in-out, opacity 0.3s ease-in-out;
 }
-.contacts__link:hover,
-.contacts__link:hover::after {
-	width: 100%;
-	opacity: 0.5;
+@media (any-hover: hover) {
+	.contacts__link:hover,
+	.contacts__link:hover::after {
+		width: 100%;
+		opacity: 0.5;
+	}
 }
 
 @media (max-width: 1025px) {

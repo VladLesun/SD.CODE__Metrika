@@ -28,8 +28,10 @@
 	color: var(--white);
 	transition: opacity 0.3s ease-in-out;
 }
-.nav__link_footer:hover {
-	opacity: 0.5;
+@media (any-hover: hover) {
+	.nav__link_footer:hover {
+		opacity: 0.5;
+	}
 }
 
 @media (max-width: 961px) {

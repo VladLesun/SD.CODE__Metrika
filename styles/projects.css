@@ -7,8 +7,11 @@
 	color: var(--text);
 }
 
-.projects__item {
+.projects__list {
 	margin-bottom: 93px;
+	display: flex;
+	flex-direction: column;
+	gap: 93px;
 }
 
 .projects__item-image {
@@ -29,8 +32,10 @@
 	text-decoration: none;
 	transition: color 0.3s ease-in-out;
 }
-.projects__item-link:hover {
-	color: gray;
+@media (any-hover: hover) {
+	.projects__item-link:hover {
+		color: gray;
+	}
 }
 
 .projects__btn {
@@ -38,9 +43,11 @@
 	background-color: transparent;
 	color: var(--accent);
 }
-.projects__btn:hover {
-	background-color: var(--accent);
-	color: var(--white);
+@media (any-hover: hover) {
+	.projects__btn:hover {
+		background-color: var(--accent);
+		color: var(--white);
+	}
 }
 
 @media (max-width: 961px) {

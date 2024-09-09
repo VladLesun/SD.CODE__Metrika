@@ -50,10 +50,12 @@
 	background-color: var(--accent);
 	color: var(--white);
 }
-.services__btn:hover {
-	background-color: transparent;
-	color: var(--accent);
-	border-color: var(--accent);
+@media (any-hover: hover) {
+	.services__btn:hover {
+		background-color: transparent;
+		color: var(--accent);
+		border-color: var(--accent);
+	}
 }
 
 @media (max-width: 961px) {
