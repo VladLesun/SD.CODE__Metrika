@@ -24,7 +24,11 @@
 	<body>
 		<header class="header">
 			<div class="container header__container">
-				<a href="index.html" class="header__logo">
+				<a
+					href="/"
+					class="header__logo"
+					aria-label="логотип компании(перейти на главную страницу)"
+				>
 					<svg
 						width="128"
 						height="23"
@@ -58,7 +62,11 @@
 				<nav class="header__nav nav">
 					<ul class="nav__list nav__list_header">
 						<li class="nav__item nav__item_header">
-							<a href="#about" class="nav__link nav__link_header title-offset">
+							<a
+								href="#about"
+								class="nav__link nav__link_header title-offset"
+								aria-label="переход к секции"
+							>
 								О НАС
 							</a>
 						</li>
@@ -66,6 +74,7 @@
 							<a
 								href="#projects"
 								class="nav__link nav__link_header title-offset"
+								aria-label="переход к секции"
 							>
 								ПРОЕКТЫ
 							</a>
@@ -74,6 +83,7 @@
 							<a
 								href="#services"
 								class="nav__link nav__link_header title-offset"
+								aria-label="переход к секции"
 							>
 								УСЛУГИ
 							</a>
@@ -82,13 +92,17 @@
 							<a
 								href="#contacts"
 								class="nav__link nav__link_header title-offset"
+								aria-label="переход к секции"
 							>
 								КОНТАКТЫ
 							</a>
 						</li>
 					</ul>
 				</nav>
-				<button class="js-burger-btn header__burger-btn">
+				<button
+					class="js-burger-btn header__burger-btn"
+					aria-label="открытия и закрытия меню"
+				>
 					<div class="header__burger-btn-inner">
 						<span class="header__burger-line header__burger-line_top"></span>
 						<span class="header__burger-line header__burger-line_bottom"></span>
@@ -458,6 +472,7 @@
 							<a
 								class="contacts__link contacts__link_phone"
 								href="tel:+79358954535"
+								aria-label="позвонить по номеру"
 							>
 								+7 935 895-45-35
 							</a>
@@ -466,6 +481,7 @@
 							<a
 								class="contacts__link contacts__link_mail"
 								href="mailto:hello@mail.com"
+								aria-label="написать на наш email"
 							>
 								hello@mail.com
 							</a>
@@ -480,7 +496,11 @@
 				<nav class="footer__nav nav">
 					<ul class="nav__list nav__list_footer">
 						<li class="nav__item nav__item_footer">
-							<a href="#about" class="nav__link nav__link_footer title-offset">
+							<a
+								href="#about"
+								class="nav__link nav__link_footer title-offset"
+								aria-label="переход к секции"
+							>
 								О НАС
 							</a>
 						</li>
@@ -488,6 +508,7 @@
 							<a
 								href="#projects"
 								class="nav__link nav__link_footer title-offset"
+								aria-label="переход к секции"
 							>
 								ПРОЕКТЫ
 							</a>
@@ -496,6 +517,7 @@
 							<a
 								href="#services"
 								class="nav__link nav__link_footer title-offset"
+								aria-label="переход к секции"
 							>
 								УСЛУГИ
 							</a>
@@ -504,6 +526,7 @@
 							<a
 								href="#contacts"
 								class="nav__link nav__link_footer title-offset"
+								aria-label="переход к секции"
 							>
 								КОНТАКТЫ
 							</a>
@@ -523,12 +546,18 @@
 				</p>
 				<form class="popup__form">
 					<label class="popup__label">
-						<input type="text" class="popup__input" placeholder="Имя" />
+						<input
+							type="text"
+							class="popup__input"
+							aria-label="имени"
+							placeholder="Имя"
+						/>
 					</label>
 					<label class="popup__label">
 						<input
 							type="email"
 							class="popup__input"
+							aria-label="электронной почты"
 							placeholder="Электронная почта"
 						/>
 					</label>
@@ -536,6 +565,7 @@
 						<input
 							type="tel"
 							class="popup__input"
+							aria-label="номера телефона"
 							placeholder="Номер телефона"
 						/>
 					</label>
@@ -546,7 +576,10 @@
 						Отправить
 					</button>
 				</form>
-				<button class="js-popup__close popup__close">
+				<button
+					class="js-popup__close popup__close"
+					aria-label="закрыть окно заказа услуг"
+				>
 					<svg
 						width="30"
 						height="30"
@@ -563,9 +596,14 @@
 				</button>
 			</div>
 		</div>
+
 		<div class="js-burger burger">
 			<div class="js-burger__content burger__content">
-				<a href="index.html" class="burger__logo">
+				<a
+					href="/"
+					class="burger__logo"
+					aria-label="логотип компании(перейти на главную страницу)"
+				>
 					<svg
 						class="burger__logo-svg"
 						width="128"
@@ -600,16 +638,40 @@
 				<nav class="burger__nav">
 					<ul class="burger__list">
 						<li class="burger__item">
-							<a class="burger__link" href="#about">О нас</a>
+							<a
+								class="burger__link"
+								href="#about"
+								aria-label="перейти к секции"
+							>
+								О нас
+							</a>
 						</li>
 						<li class="burger__item">
-							<a class="burger__link" href="#projects">ПРОЕКТЫ</a>
+							<a
+								class="burger__link"
+								href="#projects"
+								aria-label="перейти к секции"
+							>
+								ПРОЕКТЫ
+							</a>
 						</li>
 						<li class="burger__item">
-							<a class="burger__link" href="#services">УСЛУГИ</a>
+							<a
+								class="burger__link"
+								href="#services"
+								aria-label="перейти к секции"
+							>
+								УСЛУГИ
+							</a>
 						</li>
 						<li class="burger__item">
-							<a class="burger__link" href="#contacts">КОНТАКТЫ</a>
+							<a
+								class="burger__link"
+								href="#contacts"
+								aria-label="перейти к секции"
+							>
+								КОНТАКТЫ
+							</a>
 						</li>
 					</ul>
 				</nav>
@@ -617,12 +679,20 @@
 					<p class="burger__contacts-text">для связи:</p>
 					<ul class="burger__contacts-list">
 						<li class="burger__contacts-item">
-							<a class="burger__contacts-link" href="tel:+79358954535">
+							<a
+								class="burger__contacts-link"
+								href="tel:+79358954535"
+								aria-label="позвонить по номеру"
+							>
 								+7 935 895-45-35
 							</a>
 						</li>
 						<li class="burger__contacts-item">
-							<a class="burger__contacts-link" href="mailto:hello@mail.com">
+							<a
+								class="burger__contacts-link"
+								href="mailto:hello@mail.com"
+								aria-label="написать на наш email"
+							>
 								hello@mail.com
 							</a>
 						</li>
